@@ -7,16 +7,21 @@
 <body>
     <div id ="container">
         <div id="header">
-            <h1 id = "logo">Tickethack</h1>
-            <div id = "menu-container">
-             <p>Panier</p>
+            <h1 id="logo">Tickethack</h1>
+            <div id="blank"></div>
+            <div id="menu-container">
+                <p>Panier</p>
+                <div id="menu-separation"></div>
                 <p>Réservations</p>
             </div>
         </div> 
 
         <div id ='booking-container'>
-            <h1>Explorez le monde sans contraitre en train !</h1>
-            <h2>Comparez, réservez et profitez de billets de train à prix réduits : votre voyage commence sur Tickethack !</h2>
+            <div id="main-text">
+                <h1>Explorez le monde sans contrainte en train !</h1>
+                <h2>Comparez, réservez et profitez de billets de train à prix réduits : votre voyage commence sur Tickethack !</h2>
+            </div>
+            <div id = "panels-container">  
             <div class="panel" id ="left-panel">
                 <div>
                     <input class ="city" id="depart" type="text" placeholder="Ville de départ" />
@@ -25,13 +30,15 @@
                 </div>
                 <div>
                     <input type="date" placeholder=""/>
-                    </div>
+                </div>
                     <button id="search-button">Envoyer</button> 
             </div>
             <div class = "panel" id = "right-panel">
-                <img src = "images/train.png"/>
+                <img src = "images/train.png" id="train-img"/>
+                <div id="separation"></div>
                 <p>Le temps est venu de réserver votre futur voyage</p>
             </div>
+        </div>  
         </div>
     </div>
     <script src ="script.js"></script> 
