@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.search-container {
+    width: 30vw;
+    height: 50vh;
+	margin: 5vw;
+    border-radius: 10px;
+    background-color: white;
+   
+}
+
+#search-result {
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+}
+
