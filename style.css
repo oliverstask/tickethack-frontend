@@ -1,25 +1,65 @@
+
 body {
     margin: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#header {
+    height: 10vh;
+    width: 100vw;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    background-color: white;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+}
+
+#booking-container {
     background-image: url("images/background.jpg");
     background-size: cover;
-}
-#container {
-    display: flex;
+    margin: 0;
+    height: 90vh;
+    grid-row-start: 2;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 13;
     justify-content: center;
-    width: 100vw;
 }
-.search-container {
+.panel {
     width: 30vw;
     height: 50vh;
 	margin: 5vw;
     border-radius: 10px;
     background-color: white;
-   
+
 }
 
-#search-result {
-    flex-direction: row;
+#left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#right-panel {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: space-between;
+    align-items: center;
 }
 
+#search-button {
+    background-color: green;
+    height: 80px;
+    width: 200px;
+}

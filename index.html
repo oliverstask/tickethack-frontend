@@ -5,25 +5,33 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>Explorez le monde sans contraitre en train !</h1>
-        <h2>Comparez, réservez et profitez de billets de train à prix réduits : votre voyage commence sur Tickethack !</h2>
-    </div>
-
     <div id ="container">
-        <div class="search-container" id ="select-travel">
-            <div>
-                <input class ="city" id="depart" type="text" placeholder="Ville de départ" />
-                <input class ="city" type="arrivee" type="text" placeholder="Ville d'arrivée"/>
+        <div id="header">
+            <h1 id = "logo">Tickethack</h1>
+            <div id = "menu-container">
+             <p>Panier</p>
+                <p>Réservations</p>
             </div>
+        </div> 
+
+        <div id ='booking-container'>
+            <h1>Explorez le monde sans contraitre en train !</h1>
+            <h2>Comparez, réservez et profitez de billets de train à prix réduits : votre voyage commence sur Tickethack !</h2>
+            <div class="panel" id ="left-panel">
                 <div>
-                <input type="date" placeholder=""/>
+                    <input class ="city" id="depart" type="text" placeholder="Ville de départ" />
+                    <br/>
+                    <input class ="city" type="arrivee" type="text" placeholder="Ville d'arrivée"/>
                 </div>
-                <button>Envoyer</button> 
-        </div>
-        <div class = "search-container" id = "search-results">
-            <img src = "images/train.png"/>
-            <p>Le temps est venu de réserver votre futur voyage</p>
+                <div>
+                    <input type="date" placeholder=""/>
+                    </div>
+                    <button id="search-button">Envoyer</button> 
+            </div>
+            <div class = "panel" id = "right-panel">
+                <img src = "images/train.png"/>
+                <p>Le temps est venu de réserver votre futur voyage</p>
+            </div>
         </div>
     </div>
 </body>
