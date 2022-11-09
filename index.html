@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Tickethack</title>
     <link href="style.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
 </head>
 
 <body>
@@ -10,9 +12,9 @@
             <h1 id="logo">Tickethack</h1>
             <div id="blank"></div>
             <div id="menu-container">
-                <p>Panier</p>
+                <p id="cart">Panier</p>
                 <div id="menu-separation"></div>
-                <p>Réservations</p>
+                <p id="bookings">Réservations</p>
             </div>
         </div> 
 
@@ -21,25 +23,26 @@
                 <h1>Explorez le monde sans contrainte en train !</h1>
                 <h2>Comparez, réservez et profitez de billets de train à prix réduits : votre voyage commence sur Tickethack !</h2>
             </div>
-            <div id = "panels-container">  
-            <div class="panel" id ="left-panel">
-                <div>
-                    <input class ="city" id="depart" type="text" placeholder="Ville de départ" />
-                    <br/>
-                    <input class ="city" type="arrivee" type="text" placeholder="Ville d'arrivée"/>
+            <div id="panels-container">  
+                <div class="panel" id ="left-panel">
+                    <div id="cities-container">
+                        <input class="city" id="depart" type="text" placeholder="Ville de départ"/>
+                        </br>
+                        <input class="city" type="arrivee" type="text" placeholder="Ville d'arrivée"/>
+                    </div>
+                    <div>
+                        <input class="city" id="date-input" type="date" value="2022-11-08"/>
+                    </div>
+                        <button id="submit">Envoyer</button> 
                 </div>
-                <div>
-                    <input type="date" placeholder=""/>
+                <div class = "panel" id = "right-panel">
+                    <img src = "images/train.png" id="train-img"/>
+                    <div id="separation-right-panel"></div>
+                    <p>Le temps est venu de réserver votre futur voyage</p>
                 </div>
-                    <button id="search-button">Envoyer</button> 
-            </div>
-            <div class = "panel" id = "right-panel">
-                <img src = "images/train.png" id="train-img"/>
-                <div id="separation"></div>
-                <p>Le temps est venu de réserver votre futur voyage</p>
-            </div>
-        </div>  
+            </div>  
         </div>
     </div>
     <script src ="script.js"></script> 
 </body>
+</html>

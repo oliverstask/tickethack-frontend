@@ -1,0 +1,22 @@
+/* Cart + Bookings */
+
+
+#simple-container {
+    background-color: #F0F1F2;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.options {
+    height: 20vh;
+    width: 60vw;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

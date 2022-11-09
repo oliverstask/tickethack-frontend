@@ -1,0 +1,55 @@
+/*header*/
+
+body {
+    margin: 0;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+}
+
+#header {
+    height: 10vh;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+    font-size: 28px;
+    border: 0;
+    background-color: white;
+    color: #4fab91;
+    cursor: pointer;
+}
+
+#bookings,
+#cart {
+    cursor: pointer;
+}
+
+#blank {
+    margin-left: 25vw;
+    margin-right: 50vw;
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    font-weight: bold;
+    color: black;
+}
+
+#menu-separation {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

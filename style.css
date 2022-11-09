@@ -1,3 +1,5 @@
+/* Index */
+
 body {
     margin: 0;
 }
@@ -14,6 +16,8 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
+
 
 #logo {
     text-align: left;
@@ -36,10 +40,12 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 #main-text {
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #booking-container {
@@ -53,13 +59,11 @@ body {
 #panels-container {
     display: flex;
     justify-content: center;
-    
     align-items: center;
-
 }
 
 .panel {
-    width: 30vw;
+    width: 25vw;
     height: 50vh;
 	margin: 5vw;
     border-radius: 10px;
@@ -73,6 +77,28 @@ body {
     justify-content: space-around;
 }
 
+.city {
+    width: 300px;
+    height: 50px;
+    background-color: #f0f1f2;
+    border: 0;
+}
+
+#depart {
+    border-bottom: solid black 1px;
+}
+
+#submit {
+    height: 50px;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    background-color: #4fab91;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 #right-panel {
     justify-content: space-around;
     align-items: center;
@@ -84,15 +110,9 @@ body {
     margin-top: 10px;
 }
 
-#separation {
+#separation-right-panel {
     padding: 2px 150px 0px 150px;
     background-color: #4fab91;
     margin: 0;
 }
 
-#search-button {
-    height: 80px;
-    width: 200px;
-    color: white;
-    background-color: #4fab91;
-}
