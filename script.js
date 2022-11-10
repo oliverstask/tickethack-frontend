@@ -11,13 +11,13 @@ document.querySelector("#submit").addEventListener("click", function() {
         if (data.result) {
             rightPanel.innerHTML = "";
             for (let i = 0; i < data.trips.length; i++) {
-
+               
                 rightPanel.innerHTML += `
                 
                 <div class="row">
-                    <p class="travel>${data.trips[i].departure} > ${data.trips[i].arrival}</p>
+                    <p class="travel">${data.trips[i].departure} > ${data.trips[i].arrival}</p>
                     <p class="departure-hour">${formatDepartureTime(data.trips[i].date)}</p>
-                    <p class="price">${data.trips[i].price}<p>
+                    <p class="price">${data.trips[i].price}€<p>
                     <button class="book">Réserver</button>
                 </div>
                 `;    
